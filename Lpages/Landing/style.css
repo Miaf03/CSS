@@ -1,0 +1,383 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+.accoglienza {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(Imagenes/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Libre Baskerville", serif;
+}
+
+.accoglienza h2 {
+  font-size: 4rem;
+}
+
+.accoglienza a {
+  display: block;
+  color: #fff;
+  font-size: 1.5rem;
+  background: #000;
+  padding: .5rem 2rem;
+  text-decoration: none;
+  border: 3px solid #fff;
+}
+
+.accoglienza a:hover {
+  background: #00000053;
+}
+
+
+.presentation {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.presentation-left {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.presentation-left--title {
+  font-size: 4rem;
+  font-family: "Libre Baskerville", serif;
+}
+
+.presentation-left--lorem {
+  font-size: 1.3rem;
+}
+
+.presentation-left--link {
+  display: block;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 3px;
+  padding: .5rem 2rem;
+  text-decoration: none;
+  background: rgb(143, 1, 1);
+}
+
+
+.presentation-right {
+  width: 50%;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.right-grid {
+  width: 100%;
+  height: 60vh;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 40% 60%;
+  grid-template-areas: 
+  "imagen1 imagen2"
+  "imagen1 imagen3"
+  ;
+}
+
+.right-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right-grid img:nth-child(1) {
+  grid-area: imagen1;
+}
+
+.right-grid img:nth-child(2) {
+  grid-area: imagen2;
+}
+
+.right-grid img:nth-child(3) {
+  grid-area: imagen3;
+}
+
+
+.platillos {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.platillos-header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.platillos-header h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Libre Baskerville", serif;
+}
+
+.platillos-nav {
+  width: 90%;
+  padding: 1rem;
+}
+
+.platillos-nav a {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: .6rem 1.6rem;
+  border-radius: .2rem;
+  text-decoration: none;
+  background: rgb(2, 147, 2);
+}
+
+.platillos-main {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.platillos-main .box {
+  width: 240px;
+  height: 340px;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 3px 0px #333;
+}
+
+.platillos-main .box img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.platillos-main .box-description {
+  padding-top: 1rem;
+}
+
+.box-description h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.box-description p {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.box-description span {
+  font-size: 1.2rem;
+}
+
+
+.orden {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: url(Imagenes/backorder.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.orden-1 {
+  padding: 1rem;
+  font-size: 3rem;
+  font-family: "Libre Baskerville", serif;
+}
+
+.orden-2 {
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-family: "Libre Baskerville", serif;
+}
+
+.ordenar {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.3rem;
+  border-radius: .2rem;
+  padding: .6rem 1.6rem;
+  text-decoration: none;
+  background: rgb(2, 147, 2);
+}
+
+
+.biografia {
+  width: 100%;
+  height: 60vh;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #f00; */
+}
+
+.biografia-left {
+  width: 45%;
+  padding: 2rem;
+}
+
+.biografia-left--p1 {
+  display: inline-block;
+  color: #fff;
+  font-size: 2rem;
+  padding: .5rem 1rem;
+  background: rgb(143, 1, 1);;
+  font-family: "Libre Baskerville", serif;
+}
+
+.biografia-left--h3 {
+  font-size: 1.5rem;
+}
+
+.biografia-left--p2 {
+  font-size: 1.2rem;
+}
+
+.biografia-left--a {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.3rem;
+  border-radius: .2rem;
+  padding: .6rem 1.6rem;
+  text-decoration: none;
+  background: rgb(2, 147, 2);
+}
+
+.biografia-right {
+ width: 35%;
+ padding: 2rem;
+}
+
+.biografia-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.contactar {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #000; */
+}
+
+.contactar-left {
+  width: 50%;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  background: #000;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Libre Baskerville", serif;
+}
+
+.contactar-left p {
+  font-size: 2rem;
+}
+
+.contactar-left--a {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.contactar-left--img {
+  padding: .5rem 1rem;
+}
+
+.contactar-left--img a {
+  display: inline-block;
+  color: #fff;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.contactar-right {
+  width: 50%;
+  height: 100vh;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactar-right label {
+  display: block;
+  padding: .5rem 0;
+  font-size: 1.2rem;
+  font-family: "Libre Baskerville", serif;
+}
+
+.contactar-right .input {
+  width: 70%;
+  display: block;
+  padding: .5rem;
+  font-size: 1.2rem;
+}
+
+.contactar-right textarea {
+  width: 70%;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.submit {
+  display: inline-block;
+  width: 100px;
+  border: none;
+  color: #fff;
+  outline: none;
+  font-size: 1.2rem;
+  border-radius: 2px;
+  padding: .5rem 1rem;
+  background: rgb(2, 147, 2);
+}
